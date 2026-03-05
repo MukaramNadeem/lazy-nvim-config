@@ -1,8 +1,8 @@
 # Neovim Configuration
 
-A modern, fast, and feature-rich Neovim configuration managed with [lazy.nvim](https://github.com/folke/lazy.nvim).
+A modern, fast and feature-rich Neovim configuration managed with [lazy.nvim](https://github.com/folke/lazy.nvim).
 
-## Installation On Host PC
+## Installation Process
 
 ### 1. Prerequisites
 
@@ -81,21 +81,24 @@ The leader key is mapped to `<Space>`. All bindings below showing `<Space>` requ
 | `<C-s>` | Save File (`:w`) |
 | `<Esc>` | Clear search highlights (`:nohl`) |
 | `<C-h> / <C-j> / <C-k> / <C-l>` | Better window navigation |
-| `<Space>e` | Toggle Neo-tree Explorer |
+| `<Space>e` | Toggle File Explorer(Neo-tree) |
+| `gd` | Go to Definition (Jump to where function is defined) |
+| `K` | Hover Documentation (Show info about symbol under cursor) |
 | `<Space>mp` | Format file or range (Conform) |
 
 ### Telescope (Fuzzy Finding)
 | Keybinding | Action |
 | --- | --- |
-| `<Space>f` | Find Files |
-| `<Space>fg` | Find Text (Live Grep) |
+| `<Space>f` | Find Files (by filename) |
+| `<Space>fg` | Find Text (Grep across all files) |
 | `<Space>b` | Find Buffers |
 
-### Autocomplete (`nvim-cmp`)
+### Autocomplete
 | Keybinding | Action |
 | --- | --- |
 | `<C-p> / <C-n>` | Select previous / next item |
 | `<CR>` | Confirm selection |
+| `<Ctrl> Space` | Force trigger completion menu |
 | `<C-Space>` | Complete |
 
 ### LSP & Code Interaction (Java specifically - `jdtls`)
