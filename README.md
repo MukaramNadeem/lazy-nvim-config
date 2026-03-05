@@ -17,13 +17,12 @@ Ensure you have the following installed on your system before setting up the con
 
 #### Arch Linux
 ```bash
-sudo pacman -Syu
 sudo pacman -S neovim git ripgrep base-devel python jdk17-openjdk
 ```
 
 #### Debian / Ubuntu
 ```bash
-sudo apt update
+
 sudo apt install -y neovim git ripgrep build-essential python3 default-jdk
 ```
 
@@ -50,8 +49,7 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 
 # 2. Clone this repository into your Neovim config directory
-# Replace <your-repo-url> with the actual URL of your repository
-git clone <your-repo-url> ~/.config/nvim
+git clone https://github.com/MukaramNadeem/lazy-nvim-config.git ~/.config/nvim
 
 # 3. Start Neovim!
 # Lazy.nvim will automatically download and install all the plugins on the first run.
