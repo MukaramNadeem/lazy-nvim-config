@@ -1,0 +1,19 @@
+local opt = vim.opt
+
+opt.number = true             -- Show line numbers
+opt.relativenumber = true     -- Relative line numbers (helpful for jumps)
+opt.tabstop = 4               -- Tabs act like 4 spaces
+opt.shiftwidth = 4            -- Indent width
+opt.expandtab = true          -- Use spaces instead of tabs
+opt.smartindent = true        -- Smart auto-indenting
+opt.wrap = false              -- Disable line wrapping
+opt.ignorecase = true         -- Ignore case when searching...
+opt.smartcase = true          -- ...unless you type a capital
+opt.cursorline = true         -- Highlight the current line
+opt.termguicolors = true      -- True color support
+opt.scrolloff = 8             -- Keep 8 lines above/below cursor when scrolling
+opt.signcolumn = "yes"        -- Always show sign column (prevents text shift)
+opt.updatetime = 50           -- Faster completion (4000ms default)
+opt.undofile = true           -- Persistent undo (keeps history after close)
+opt.splitright = true         -- Vertical splits go right
+opt.splitbelow = true         -- Horizontal splits go down
